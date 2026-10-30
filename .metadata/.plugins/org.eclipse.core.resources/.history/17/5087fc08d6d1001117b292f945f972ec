@@ -1,0 +1,62 @@
+package comm.app.core;
+
+import java.util.Scanner;
+
+public class ArrayExercise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		// simple array printing
+
+		int[] number = { 10, 20, 30, 40, 50 };
+		
+		System.out.println("Displaying number array");
+		for (int i = 0; i < number.length; i++) {
+			System.out.print(" " + number[i]);
+		}
+		System.out.println("");
+		
+		
+		// taking I/P from user
+		int[] array1 = new int[5];
+		
+		System.out.println("Enter 5 inputs for array");
+		for (int i = 0; i < array1.length; i++) {
+			array1[i] = sc.nextInt();
+		}
+
+		System.out.println("Displaying array1 element");
+		
+		for (int i = 0; i < array1.length; i++) {
+			System.out.print(" " + array1[i]);
+		}
+		 System.out.println();
+		// sum of array element
+		int sum=0;
+		for(int a=0;a<array1.length;a++) {
+			sum=sum+array1[a];
+		}
+		System.out.println("Sum of array element is "+sum);
+		
+		//finding largest number in array
+		System.out.println("");
+		int largest=array1[0];
+		 
+		for(int m=1;m<array1.length;m++) {
+			if(array1[m]>largest) {
+				largest=array1[m];
+			}
+		 }
+		System.out.println("The largest number in array1 is "+largest);
+		
+		//Reverse the array       
+		System.out.println("Reverse of array1");
+		 for(int k=array1.length-1;k>0;k--) {
+			 System.out.print(array1[k]);
+		 }
+		
+	}
+
+}
