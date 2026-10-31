@@ -1,0 +1,10 @@
+
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+bin/
+target/
+build/
+.settings/
+.classpath
+.project
